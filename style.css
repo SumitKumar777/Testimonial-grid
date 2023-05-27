@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Inter:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.layout {
+  margin: 100px auto;
+  width: 83%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 25px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.profile {
+  display: flex;
+  background: none;
+}
+
+img {
+  width: 38px;
+  border: 2px solid rgb(246, 243, 243);
+  border-radius: 50%;
+  background: none;
+}
+.about {
+  background: none;
+  margin-left: 10px;
+}
+.about p {
+  background: none;
+}
+
+.name {
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  font-weight: bold;
+}
+.third .name,
+.fourth .name {
+  color: hsl(217, 19%, 35%);
+}
+.graduate {
+  color: hsl(0, 0%, 76%);
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth {
+  padding: 22px 30px;
+  border-radius: 10px;
+}
+.first {
+  background-color: hsl(263, 55%, 52%);
+  justify-content: stretch;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.second {
+  background-color: hsl(217, 19%, 35%);
+  grid-column: 3/4;
+  grid-row: 1/2;
+  width: 250px;
+}
+.third {
+  background-color: hsl(0, 0%, 100%);
+  width: 250px;
+  grid-column: 4/5;
+  grid-row: 1/3;
+  box-shadow: 1px 4px 6px grey;
+}
+.fourth {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: -2px 3px 9px grey;
+}
+.fifth {
+  background-color: hsl(219, 29%, 14%);
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.third .experience,
+.fourth .experience {
+  color: hsl(217, 19%, 35%);
+}
+
+.experience {
+  font-weight: bolder;
+  margin-top: 10px;
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  background: none;
+}
+.second-exp {
+  margin-top: 20px;
+  background: none;
+  color: hsl(0, 0%, 67%);
+}
